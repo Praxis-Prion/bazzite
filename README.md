@@ -1,7 +1,7 @@
 # bazzite
 Scripts for Bazzite Linux installation
 
-===qnap-nas-mounter.sh===
+-qnap-nas-mounter.sh
 Handles mounting, unmounting, and verifying QNAP TS-230 NAS to increase performance in Bazzite. Makes NAS connection more closely resemble Windows.
 
 Uses the following CIFS mount options: uid=1000,gid=1000,noacl,noperm,soft,_netdev,serverino,iocharset=utf8
