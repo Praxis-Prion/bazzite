@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 # Master script to mount, unmount, verify NAS automount setup on Bazzite with menu loop
 
+#Options=\
+# credentials=$CREDENTIAL_FILE,    # File containing NAS username/password (root-only, secure)
+# uid=1000,gid=1000,               # Map all files on NAS to your local user/group
+# noacl,                           # Ignore extended ACLs from the NAS (simplifies permissions)
+# noperm,                          # Skip client-side permission checking (server enforces access)
+# soft,                            # Return errors immediately if NAS is unreachable (avoid hanging)
+# _netdev,                         # Treat as network device; mount after network is up
+# serverino,                       # Use server-provided inode numbers (prevents file ID conflicts)
+# iocharset=utf8,                  # Ensure proper handling of filenames with non-ASCII characters
+# actimeo=1                        # Cache attribute info for 1 second (faster updates on files)
+
+
 set -euo pipefail
 
 # --- Configuration ---
